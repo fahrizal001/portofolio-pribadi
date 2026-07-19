@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio Mohammad Fahrizal - Full-Stack Web Developer & UI/UX Designer. Menampilkan proyek terbaru, keahlian, dan riwayat pengalaman.">
+    <meta name="keywords"
+        content="Mohammad Fahrizal, Portofolio, Web Developer, UI/UX Designer, Frontend Developer, Backend Developer, Indonesia">
+    <meta name="author" content="Mohammad Fahrizal">
+    <title>Mohammad Fahrizal | Portofolio Pribadi</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div class="blobblob blob-1"></div>
+    <div class="blobblob blob-2"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Fahrizal<span class="logo-accent">.dev /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link" id="link-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">Tentang</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Proyek</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">Pengalaman</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Ubah Tema">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+
+                <!-- Burger Button -->
+                <button class="burger-menu" id="burger-menu" aria-label="Buka Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content">
+                    <span class="home-subtitle" id="hero-subtitle-intro">Halo, Selamat Datang!</span>
+                    <h1 class="home-title" id="hero-title">Saya <span class="gradient-text">Mohammad Fahrizal</span>
+                    </h1>
+                    <h2 class="home-typewriter">Sebagai <span id="typewriter-text" class="accent-text"></span><span
+                            class="cursor">&nbsp;</span></h2>
+                    <p class="home-description" id="hero-description">
+                        Saya adalah seorang pengembang web Full-Stack dan desainer UI/UX yang berdedikasi untuk
+                        menciptakan aplikasi web yang responsif, interaktif, dan berkinerja tinggi dengan pengalaman
+                        pengguna yang luar biasa.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#contact" class="btn btn-primary" id="btn-hero-contact">Hubungi Saya <i
+                                class="fas fa-paper-plane"></i></a>
+                        <a href="#projects" class="btn btn-outline" id="btn-hero-projects">Lihat Proyek <i
+                                class="fas fa-arrow-down"></i></a>
+                    </div>
+                    <div class="home-social">
+                        <a href="https://github.com" target="_blank" class="home-social-icon" id="hero-social-github"
+                            title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="home-social-icon"
+                            id="hero-social-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://dribbble.com" target="_blank" class="home-social-icon"
+                            id="hero-social-dribbble" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="home-social-icon"
+                            id="hero-social-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="home-img-container">
+                    <div class="home-img-wrapper">
+                        <!-- Profile Image Frame -->
+                        <div class="home-img-bg"></div>
+                        <div class="home-img-avatar">
+                            <i class="fas fa-user-astronaut avatar-placeholder"></i>
+                        </div>
+                    </div>
+                    <!-- Stats Floating Cards -->
+                    <div class="floating-badge badge-1">
+                        <span class="badge-icon"><i class="fas fa-award"></i></span>
+                        <div class="badge-text">
+                            <span class="badge-num">3+</span>
+                            <span class="badge-title">Tahun Pengalaman</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="badge-icon"><i class="fas fa-check-circle"></i></span>
+                        <div class="badge-text">
+                            <span class="badge-num">10+</span>
+                            <span class="badge-title">Proyek Selesai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down" id="scroll-down-btn">
+                <span class="scroll-down-text">Gulir ke Bawah</span>
+                <i class="fas fa-chevron-down scroll-down-icon"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title text-center" id="about-section-title">Tentang Saya</h2>
+            <span class="section-subtitle text-center" id="about-section-subtitle">Pengenalan Singkat & Keahlian</span>
+
+            <div class="about-container container grid">
+                <div class="about-info card glass">
+                    <h3 class="about-heading" id="about-heading">Siapa Saya?</h3>
+                    <p class="about-text" id="about-text-p1">
+                        Saya adalah Web Developer yang berbasis di Indonesia. Saya memiliki passion yang mendalam
+                        terhadap teknologi web, seni visual, dan desain antarmuka. Saya senang memecahkan masalah yang
+                        kompleks dan mengubahnya menjadi aplikasi web yang intuitif dan elegan.
+                    </p>
+                    <p class="about-text" id="about-text-p2">
+                        Dalam membangun aplikasi, saya selalu fokus pada kualitas kode, performa, aksesibilitas, dan
+                        antarmuka pengguna yang menarik (UI/UX). Saya berkomitmen untuk terus belajar mengikuti
+                        perkembangan teknologi terbaru guna memberikan solusi digital terbaik.
+                    </p>
+                    <div class="about-personal-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lokasi:</span>
+                            <span class="detail-val">Depok, Indonesia</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Status Pekerjaan:</span>
+                            <span class="detail-val text-accent">Tersedia untuk Freelance & Full-time</span>
+                        </div>
+                    </div>
+                    <div class="about-action">
+                        <a href="#" class="btn btn-primary" id="btn-download-cv">Unduh CV <i
+                                class="fas fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="about-skills">
+                    <h3 class="about-heading" id="skills-heading">Keahlian & Teknologi</h3>
+                    <div class="skills-categories">
+                        <div class="skills-category card glass">
+                            <h4 class="category-title"><i class="fas fa-code text-cyan"></i> Frontend</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3 / SASS</span>
+                                <span class="skill-tag">JavaScript (ES6+)</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">React.js</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">TailwindCSS</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-category card glass">
+                            <h4 class="category-title"><i class="fas fa-server text-purple"></i> Backend & DB</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Express.js</span>
+                                <span class="skill-tag">RESTful API</span>
+                                <span class="skill-tag">GraphQL</span>
+                                <span class="skill-tag">MySQL / PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Firebase</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-category card glass">
+                            <h4 class="category-title"><i class="fas fa-toolbox text-pink"></i> Tools & Desain</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Git / GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Adobe Photoshop</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Vercel / Netlify</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title text-center" id="projects-section-title">Proyek Unggulan</h2>
+            <span class="section-subtitle text-center" id="projects-section-subtitle">Beberapa karya terbaik yang saya
+                bangun baru-baru ini</span>
+
+            <div class="projects-container container">
+                <!-- Filter Tabs -->
+                <div class="project-filters" id="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+                    <button class="filter-btn" data-filter="frontend" id="filter-frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend" id="filter-backend">Backend / Full-Stack</button>
+                    <button class="filter-btn" data-filter="design" id="filter-design">UI/UX Design</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card card glass" data-category="frontend" id="project-1">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-1">
+                                <i class="fas fa-shopping-cart project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="1">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">Frontend</span>
+                            <h3 class="project-title">E-Commerce Space Store</h3>
+                            <p class="project-desc">Aplikasi web toko online futuristik dengan tema antariksa, keranjang
+                                belanja interaktif, dan checkout multi-langkah.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Context API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card card glass" data-category="backend" id="project-2">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-2">
+                                <i class="fas fa-tasks project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="2">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">Full-Stack</span>
+                            <h3 class="project-title">Task Management API & Dashboard</h3>
+                            <p class="project-desc">Sistem manajemen tugas tim dengan otentikasi JWT, role-based access
+                                control, dan diagram analitik real-time.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card card glass" data-category="design" id="project-3">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-3">
+                                <i class="fas fa-leaf project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="3">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">UI/UX Design</span>
+                            <h3 class="project-title">EcoTravel Mobile App</h3>
+                            <p class="project-desc">Desain antarmuka aplikasi pemesanan tiket wisata ramah lingkungan di
+                                Figma, lengkap dengan prototipe interaktif.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card card glass" data-category="frontend" id="project-4">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-4">
+                                <i class="fas fa-cloud-sun project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="4">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">Frontend</span>
+                            <h3 class="project-title">Weather Dashboard Insight</h3>
+                            <p class="project-desc">Peta pemantau cuaca interaktif dengan integrasi OpenWeatherMap API,
+                                grafik perubahan suhu, dan ramalan 7 hari.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">HTML5 / CSS3</span>
+                                <span class="tech-tag">JavaScript ES6</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card card glass" data-category="backend" id="project-5">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-5">
+                                <i class="fas fa-comments project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="5">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">Full-Stack</span>
+                            <h3 class="project-title">ChatRoom App Real-time</h3>
+                            <p class="project-desc">Aplikasi ruang obrolan langsung (real-time chat) berbasis kanal
+                                dengan notifikasi instan dan berbagi berkas.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">React.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card card glass" data-category="design" id="project-6">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-placeholder gradient-6">
+                                <i class="fas fa-pizza-slice project-icon"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <button class="btn btn-small btn-primary view-details-btn" data-project-id="6">Lihat
+                                    Detail</button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category-tag">UI/UX Design</span>
+                            <h3 class="project-title">Foodiez Delivery UI Kit</h3>
+                            <p class="project-desc">Desain sistem dan kit UI aplikasi pesan-antar makanan sehat, dengan
+                                fokus pada navigasi cepat dan visual yang menggugah selera.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Design System</span>
+                                <span class="tech-tag">Wireframing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience section" id="experience">
+            <h2 class="section-title text-center" id="experience-section-title">Riwayat Pengalaman</h2>
+            <span class="section-subtitle text-center" id="experience-section-subtitle">Perjalanan edukasi dan karier
+                profesional saya</span>
+
+            <div class="experience-container container grid">
+                <!-- Pekerjaan -->
+                <div class="timeline-wrapper">
+                    <h3 class="timeline-title-main" id="work-experience-title"><i class="fas fa-briefcase"></i>
+                        Pengalaman Kerja</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2024 - Sekarang</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">Senior Web Developer</h4>
+                                <p class="timeline-company">TechInnovate Solutions, Jakarta</p>
+                                <p class="timeline-text">
+                                    Memimpin tim pengembangan frontend untuk membangun sistem dashboard analitik
+                                    internal berskala besar. Meningkatkan performa pemuatan aplikasi web sebesar 40%
+                                    melalui teknik code-splitting dan optimasi bundel.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">Full-Stack Web Developer</h4>
+                                <p class="timeline-company">NexaDigital Studio, Bandung</p>
+                                <p class="timeline-text">
+                                    Mengembangkan, memelihara, dan merilis 10+ proyek e-commerce dan aplikasi web kustom
+                                    untuk klien berskala menengah. Bekerja dengan React, Node.js, Express, dan
+                                    PostgreSQL.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2021 - 2022</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">Junior Frontend Developer</h4>
+                                <p class="timeline-company">CreativePixels Agency, Jakarta</p>
+                                <p class="timeline-text">
+                                    Mengkonversi desain Figma piksel-sempurna menjadi file HTML, CSS, dan JavaScript
+                                    interaktif dengan transisi halus dan struktur SEO-friendly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="timeline-wrapper">
+                    <h3 class="timeline-title-main" id="education-experience-title"><i
+                            class="fas fa-graduation-cap"></i> Pendidikan & Sertifikasi</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 - 2022</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">S1 Teknik Informatika</h4>
+                                <p class="timeline-company">Universitas Bina Nusantara, Jakarta</p>
+                                <p class="timeline-text">
+                                    Lulus dengan predikat Cum Laude. Aktif dalam organisasi kemahasiswaan bidang riset
+                                    pemrograman dan memenangkan kompetisi peretasan (Hackathon) tingkat kampus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">Certified React Developer</h4>
+                                <p class="timeline-company">Udacity Academy / Google Career Certificates</p>
+                                <p class="timeline-text">
+                                    Program sertifikasi intensif mencakup State Management lanjut (Redux, Context API),
+                                    optimalisasi performa React, Hooks kustom, dan pengujian komponen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content card glass">
+                                <h4 class="timeline-item-title">UI/UX Specialization Course</h4>
+                                <p class="timeline-company">Interaction Design Foundation (IxDF)</p>
+                                <p class="timeline-text">
+                                    Mempelajari prinsip desain antarmuka, psikologi pengguna, riset persona,
+                                    wireframing, perancangan prototipe interaktif, dan uji keterpakaian (usability
+                                    testing).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title text-center" id="contact-section-title">Hubungi Saya</h2>
+            <span class="section-subtitle text-center" id="contact-section-subtitle">Ada pertanyaan atau ingin
+                berkolaborasi? Jangan ragu kirimkan pesan!</span>
+
+            <div class="contact-container container grid">
+                <!-- Info Kontak -->
+                <div class="contact-info">
+                    <h3 class="contact-heading" id="contact-info-heading">Mari Berdiskusi</h3>
+                    <p class="contact-text" id="contact-info-text">
+                        Pintu saya selalu terbuka untuk mendiskusikan proyek baru, ide kreatif, atau peluang menarik di
+                        dunia digital.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-card card glass">
+                            <i class="fas fa-envelope contact-card-icon"></i>
+                            <div>
+                                <h4 class="contact-card-title">Email</h4>
+                                <a href="mailto:mohfahrizal69@gmail.com"
+                                    class="contact-card-link">mohfahrizal69@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card card glass">
+                            <i class="fas fa-phone-alt contact-card-icon"></i>
+                            <div>
+                                <h4 class="contact-card-title">Telepon / WA</h4>
+                                <a href="https://wa.me/62895412240696" target="_blank"
+                                    class="contact-card-link">+62895412240696</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card card glass">
+                            <i class="fas fa-map-marker-alt contact-card-icon"></i>
+                            <div>
+                                <h4 class="contact-card-title">Lokasi</h4>
+                                <span class="contact-card-text">Depok, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulir Kontak -->
+                <div class="contact-form-wrapper card glass">
+                    <form action="#" class="contact-form" id="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="form-name" name="name" class="form-input"
+                                    placeholder="Masukkan nama Anda" required>
+                                <span class="form-error" id="name-error">Nama tidak boleh kosong</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Alamat Email</label>
+                                <input type="email" id="form-email" name="email" class="form-input"
+                                    placeholder="Masukkan email Anda" required>
+                                <span class="form-error" id="email-error">Masukkan email yang valid</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-subject" class="form-label">Subjek</label>
+                            <input type="text" id="form-subject" name="subject" class="form-input"
+                                placeholder="Subjek pesan" required>
+                            <span class="form-error" id="subject-error">Subjek tidak boleh kosong</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message" class="form-label">Pesan</label>
+                            <textarea id="form-message" name="message" class="form-input form-textarea"
+                                placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                            <span class="form-error" id="message-error">Pesan tidak boleh kosong</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">
+                            <span>Kirim Pesan</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <!-- Form Status Message -->
+                        <div class="form-status" id="form-status">
+                            <!-- Succes or Error message populated via JS -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <h2 class="footer-logo">&lt;Fahrizal<span class="logo-accent">.dev /&gt;</span></h2>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://github.com" target="_blank" class="footer-social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="footer-social-icon"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://instagram.com" target="_blank" class="footer-social-icon"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Mohammad Fahrizal. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="scroll-top" id="scroll-top" aria-label="Kembali ke Atas">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Project Details Modal (Hidden by Default) -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container card glass">
+            <button class="modal-close" id="modal-close" aria-label="Tutup Detail Proyek">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content-area">
+                <!-- Populated Dynamically via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
