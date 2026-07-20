@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // TYPEWRITER ANIMATION (HERO)
     // ==========================================
     const typewriterText = document.getElementById('typewriter-text');
-    const words = ["Full-Stack Web Developer", "UI/UX Designer", "Problem Solver"];
+    const words = ["Full-Stack Web Developer", "UI/UX Designer", "Network Engeener"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
